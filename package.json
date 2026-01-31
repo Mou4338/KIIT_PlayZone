@@ -5,6 +5,7 @@
   },
   "name": "kiit-playzone",
   "version": "1.0.0",
+  "public":true,
   "description": "KIIT PlayZone - Frontend app using localStorage",
   "scripts": {
     "dev": "npx serve .",
