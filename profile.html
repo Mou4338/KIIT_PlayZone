@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile | KIIT PlayZone</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <a href="home.html">KIIT PlayZone</a>
+  </div>
+
+  <ul class="nav-links">
+    <li class="active"><a href="home.html">Home</a></li>
+    <li><a href="category.html">Categories</a></li>
+    <li><a href="favourites.html">Favourites</a></li>
+    <li><a href="profile.html">Profile</a></li>
+  </ul>
+</nav>
+  <script src="loadNavbar.js"></script>
+
+  <section class="profile-container">
+  <div class="profile-card">
+    <div class="avatar">👤</div>
+    <h2 class="profile-name" id="fullName">Player Name</h2>
+    <p class="profile-username" id="username">@username</p>
+    <div class="profile-info">
+      <div><span>Email : </span><p id="email"></p></div>
+      <div><span>Contact : </span><p id="contact"></p></div>
+      <div><span>Year : </span><p id="year"></p></div>
+    </div>
+    <div class="profile-stats">
+      <div>
+        <span id="favCount">0</span>
+        <small>Favourites</small>
+      </div>
+    </div>
+    <div class="change-password">
+    <h3 class="sub-title_profile">Change Password</h3>
+  <div class="pass-row">
+    <label>Current Password : </label>
+    <input type="password" id="oldPassword">
+  </div>
+  <div class="pass-row">
+    <label>New Password : </label>
+    <input type="password" id="newPassword">
+  </div>
+    <div class="pass-row">
+    <label>Confirm Password : </label>
+    <input type="password" id="confirmPassword">
+    </div>
+    <button class="change-btn" onclick="changePassword()">Update Password</button>
+    </div>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+</section>
+<script src="profile.js"></script>
+<script src="loadNavbar.js"></script>
+</body>
+</html>
+

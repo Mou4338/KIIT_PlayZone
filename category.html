@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KIIT PlayZone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+  <div class="logo">
+    <a href="home.html">KIIT PlayZone</a>
+  </div>
+
+  <ul class="nav-links">
+    <li class="active"><a href="home.html">Home</a></li>
+    <li><a href="category.html">Categories</a></li>
+    <li><a href="favourites.html">Favourites</a></li>
+    <li><a href="profile.html">Profile</a></li>
+  </ul>
+</nav>
+  <script src="loadNavbar.js"></script>
+
+<br><br>
+<section class="controls">
+  <input type="text" id="search" placeholder="🔍 Search games">
+
+  <div class="categories">
+    <button data-cat="all" class="active">All</button>
+    <button data-cat="Action">Action</button>
+    <button data-cat="Puzzle">Puzzle</button>
+    <button data-cat="Arcade">Arcade</button>
+    <button data-cat="Technical">Technical</button>
+    <button data-cat="Cooking">Cooking</button>
+    <button data-cat="Quiz">Quiz</button>
+    <button data-cat="Adventure">Adventure</button>
+    <button data-cat="Racing">Racing</button>
+    <button data-cat="Board">Board</button>
+    <button data-cat="Sports">Sports</button>
+  </div>
+</section>
+<div class="grid" id="grid"></div>
+
+<script src="games.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

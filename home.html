@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KIIT PlayZone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <div class="logo">
+    <a href="home.html">KIIT PlayZone</a>
+  </div>
+
+  <ul class="nav-links">
+    <li class="active"><a href="home.html">Home</a></li>
+    <li><a href="category.html">Categories</a></li>
+    <li><a href="favourites.html">Favourites</a></li>
+    <li><a href="profile.html">Profile</a></li>
+  </ul>
+</nav>
+  <script src="loadNavbar.js"></script>
+
+<header class="hero">
+  <h1>Welcome to KIIT PlayZone 🎮</h1>
+  <p>Play popular browser games instantly. No downloads, just fun.</p>
+</header>
+
+<section class="sub-title">
+  <h2>Popular Games</h2>
+</section>
+<div class="grid" id="grid"></div>
+
+<section class="sub-title">
+  <h2>Categories</h2>
+
+  <div class="category-list" id="categoryList">
+    <div class="category-card" data-category="Action">⚔️ Action</div>
+    <div class="category-card" data-category="Puzzle">🧩 Puzzle</div>
+    <div class="category-card" data-category="Arcade">🕹️ Arcade</div>
+    <div class="category-card" data-category="Technical">💻 Technical</div>
+    <div class="category-card" data-category="Cooking">🍳 Cooking</div>
+    <div class="category-card" data-category="Quiz">❓ Quiz</div>
+    <div class="category-card" data-category="Adventure">🧭 Adventure</div>
+    <div class="category-card" data-category="Racing">🏎️ Racing</div>
+    <div class="category-card" data-category="Board">♟️ Board</div>
+    <div class="category-card" data-category="Sports">🏆 Sports</div>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".category-card").forEach(card => {
+    card.addEventListener("click", function () {
+      const category = this.dataset.category;
+      console.log("Clicked category:", category);
+      window.location.href =
+        "category.html?category=" + encodeURIComponent(category);
+    });
+  });
+});
+</script>
+
+<script src="home_script.js"></script>
+</body>
+</html>
