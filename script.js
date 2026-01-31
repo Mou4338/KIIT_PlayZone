@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const grid = document.getElementById("grid");
 const search = document.getElementById("search");
 const buttons = document.querySelectorAll(".categories button");
@@ -75,22 +75,3 @@ function saveFavourites(favs) {
 }
 
 render();
-
-
-=======
-document.getElementById("signupForm").addEventListener("submit",function(e){
-    e.preventDefault();
-let username=document.getElementById("username").value;
-let email=document.getElementById("email").value;
-let password=document.getElementById("password").value;
-let message=document.getElementById("message");
-if(password.lenght<6){
-    message.style.color="red";
-    message.innerText="password must be 6 character long";
-    return;
-}
-message.style.color="green";
-message.innerText="sign up succesfull"
-}
-);
->>>>>>> 2d278efb56fa25dd73f222d49b2f89bfc9736968
