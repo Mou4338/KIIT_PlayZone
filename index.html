@@ -172,7 +172,7 @@ option{
   </form>
 </div>
 
-  <script>
+      <script>
 document.getElementById("signupForm").addEventListener("submit", async function (e) {
   e.preventDefault();
 
@@ -203,7 +203,9 @@ document.getElementById("signupForm").addEventListener("submit", async function 
     alert("Password must be at least 8 characters");
     return;
   }
-  //Directly open without database saving
+  localStorage.setItem("user", JSON.stringify(data));
+
+  alert("Signup successful!");
   window.location.href = "home.html";
 
   try {
@@ -219,15 +221,19 @@ document.getElementById("signupForm").addEventListener("submit", async function 
       alert(result.message);
       return;
     }
+
+    // Save user locally (optional)
     localStorage.setItem("user", JSON.stringify(data));
+
     alert("Signup successful!");
     window.location.href = "home.html";
 
   } catch (err) {
-    alert("Backend not running on localhost:3000");
+    alert("Backend not running. Start server.js first.");
     console.error(err);
   }
 });
 </script>
+
 </body>
 </html>
