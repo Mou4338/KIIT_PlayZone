@@ -1,17 +1,9 @@
 {
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mou4338/KIIT_PlayZone.git"
-  },
   "name": "kiit-playzone",
   "version": "1.0.0",
-  "public":true,
+  "private": true,
   "description": "KIIT PlayZone - Frontend app using localStorage",
-  "scripts": {
-    "dev": "npx serve .",
-    "build": "echo \"No build needed\"",
-    "start": "index.html"
-  },
   "author": "Moumita Das",
   "license": "ISC"
 }
+
